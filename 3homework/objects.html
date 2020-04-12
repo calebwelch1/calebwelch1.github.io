@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // objects use curly braces
+
+
+        var someArray = ["stuff", "inside", "array"]
+        var person = {
+            realName: "David Allen",
+            age: 72,
+            location: "New Hampshire",
+            occupation: "Student"
+            canParty: function () {
+                // this.var to access something "IN THIS" Object
+                if (this.age >= 21) {
+                    console.log("Party Time!!!")
+                } else {
+                    console.log("Bummer!");
+                }
+            }
+        }
+        // two different ways to call object. . notation and bracket notation
+        console.log(person.age)
+        console.log(person["age"]);
+        person.canParty();
+
+    </script>
+</body>
+
+</html>
